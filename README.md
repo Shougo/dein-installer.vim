@@ -20,14 +20,14 @@ following **wget** or **curl** command:
 
 #### Wget
 
-```sh
+```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh)"
 ```
 
 
 #### Curl
 
-```sh
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh)"
 ```
 
@@ -40,10 +40,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Shougo/dein-installer.vim/
 You can do that by downloading the install script, then looking through it to
 check if the code is safe:
 
-```sh
-$ wget https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh
-$ less installer.sh
-$ sh installer.sh
+```bash
+wget https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh
+less installer.sh
+sh installer.sh
 ```
 
 The script code is well formatted, so you can better understand all the code.
