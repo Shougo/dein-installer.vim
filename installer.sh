@@ -277,7 +277,7 @@ dein() {
   while [ $# -gt 0 ]; do
     case $1 in
     --overwrite-config | -oWC) KEEP_CONFIG=no ;;
-    *./* | */home/* | *~/* | /Users/* ) BASE=$(eval echo "${1%/}") ;;
+    *./* | */home/* | *~/* | /Users/* ) BASE=$(realpath "${1%/}") ;;
     --use-vim-config | -uVC)
       CONFIG_LOCATION="$HOME"
       CONFIG_FILENAME=".vimrc"
